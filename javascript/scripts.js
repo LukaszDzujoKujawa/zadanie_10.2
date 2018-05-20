@@ -1,6 +1,5 @@
 $(function(){
 	console.log('DOM loaded');
-});
 
 var span = $("span");
 	span.each(function(index, element) {
@@ -8,7 +7,6 @@ var span = $("span");
 			$(element).css('color', 'red');
 		}
 });
-	
 var paragraphs = $('p');
 	console.log(paragraphs);
 	paragraphs.each(function(index, element){
@@ -18,4 +16,5 @@ var paragraphs = $('p');
 	
 $("button").on( "click", function(){
 		alert($(this).attr("data-tmp"));
+	});
 });
