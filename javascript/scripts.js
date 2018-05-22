@@ -1,20 +1,20 @@
 $(function(){
 	console.log('DOM loaded');
-
-var span = $("span");
-	span.each(function(index, element) {
-		if(index % 2 === 0){
+	var span = $("span");
+		span.each(function(index, element) {
+			if(index % 2 === 0){
 			$(element).css('color', 'red');
-		}
+			}
 });
+
 var paragraphs = $('p');
 	console.log(paragraphs);
 	paragraphs.each(function(index, element){
-		var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
-		$(element).append(button);		
+	var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
+	$(element).append(button);		
 });
 	
 $("button").on( "click", function(){
-		alert($(this).attr("data-tmp"));
+	alert($(this).attr("data-tmp"));
 	});
 });
