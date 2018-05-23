@@ -7,14 +7,14 @@ $(function(){
 			}
 });
 
-var paragraphs = $('p');
+	var paragraphs = $('p');
 	console.log(paragraphs);
 	paragraphs.each(function(index, element){
 	var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
 	$(element).append(button);		
 });
 	
-$("button").on( "click", function(){
-	alert($(this).attr("data-tmp"));
+	$("button").on( "click", function(){
+		alert($(this).attr("data-tmp"));
 	});
 });
